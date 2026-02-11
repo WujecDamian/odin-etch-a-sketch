@@ -39,7 +39,7 @@ buttonNewGrid.addEventListener('click', () => {
   let customBlocksCounts = prompt(
     'Give number od block in row. ( eg.16 = 16x16 grid )'
   )
-  while (customBlocksCounts > 100) {
+  while (customBlocksCounts > 100 || customBlocksCounts < 1) {
     customBlocksCounts = prompt('Give number not bigger than 100')
   }
   newGrid(customBlocksCounts)
